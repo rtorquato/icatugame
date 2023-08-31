@@ -124,7 +124,7 @@
         background-position: left 0 top 0px;
     }
     100% {
-        background-position: left -2610px top 0px;
+        background-position: left -1760px  top 0px;
     }
 }
 
@@ -133,79 +133,79 @@
         background-position: left 0 top 0px;
     }
     100% {
-        background-position: left -2610px top 0px;
+        background-position: left -1760px  top 0px;
     }
 }
 
 @keyframes bg2 {
     0% {
-        background-position: left -2610px top 0px;
+        background-position: left -1760px  top 0px;
     }
     100% {
-        background-position: left -4240px top 0px;
+        background-position: left -2610px top 0px;
     }
 }
 
 @-webkit-keyframes bg2 {
     0% {
-        background-position: left -2610px top 0px;
+        background-position: left -1760px top 0px;
     }
     100% {
-        background-position: left -4240px top 0px;
+        background-position: left -2610px top 0px;
     }
 }
 
 @keyframes bg3 {
     0% {
-        background-position: left -4240px top 0px;
+        background-position: left -2610px top 0px;
     }
     100% {
-        background-position: left -5460px top 0px;
+        background-position: left -3650px top 0px;
     }
 }
 
 @-webkit-keyframes bg3 {
     0% {
-        background-position: left -4240px top 0px;
+        background-position: left -2610px top 0px;
     }
     100% {
-        background-position: left -5460px top 0px;
+        background-position: left -3650px top 0px;
     }
 }
 
 @keyframes bg4 {
     0% {
-        background-position: left -5460px top 0px;
+        background-position: left -3650px top 0px;
     }
     100% {
-        background-position: left -7620px top 0px;
+        background-position: left -5080px top 0px;
     }
 }
 
 @-webkit-keyframes bg4 {
     0% {
-        background-position: left -5460px top 0px;
+        background-position: left -3650px top 0px;
     }
     100% {
-        background-position: left -7620px top 0px;
+        background-position: left -5080px top 0px;
     }
 }
 
 @keyframes bg5 {
     0% {
-        background-position: left -7620px top 0px;
+        background-position: left -5080px top 0px;
     }
     100% {
-        background-position: left -10745px top 0px;
+        background-position: left -7177px top 0px;
     }
 }
 
 @-webkit-keyframes bg5 {
     0% {
-        background-position: left -7620px top 0px;
+        background-position: left -5080px top 0px;
     }
     100% {
-        background-position: left -10745px top 0px;
+        background-position: left -7177px top 0px;
     }
 }
 
