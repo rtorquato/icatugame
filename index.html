@@ -2,39 +2,55 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Icatu Game</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="src/css/style.css">
-
-    <title>Icatu Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/icatu-game.css">
+    <link rel="stylesheet" href="css/icatu-animations.css">
+    <style>
+        html {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
 </head>
 <body>
-
-    <div id="game">
-        <div class="intro">
-            <img src="src/img/intro/logoGame.png" alt="Icatu Game" class="logo">
-            
-            <div class="content-asking">
-
-                <p>A Icatu garante 02 meses de pontuação dobrada pra você na Insurance Experience 2024?</p>
-
-                <div class="content-answers">
-                    <button class="btn-answers" data-option="sim">sim</button>
-                    <button class="btn-answers" data-option="não">não</button>
+    <section id="main-area" class="tela mx-auto">
+        <div id="intro-area" class="tela bg-[url(../img/bg.jpg)] bg-cover bg-center transition-all duration-500">
+            <div class="w-full h-full flex flex-col justify-center items-center">
+                <div class="w-full py-20 flex flex-col justify-center items-center">
+                    <img class="w-[100%] max-w-[90%] " src="img/logo.png" alt="Icatu Game">
                 </div>
-                <div id="answers"></div>
-
+                <div id="replace-content-intro" class="transition-all duration-500 ">
+                    <div id="loading" class=" mx-auto flex flex-col justify-center items-center pb-16"></div>
+                    <div class="mx-auto">
+                        <h1 id="title-intro" class="text-[10rem] text-white font-black italic leading-[10rem] tracking-normal">
+                            Jogue e colete os <br>
+                            benefícios Icatu <br>
+                            para Assessores <br>
+                            e Dedicados XP.
+                        </h1>
+                        <p id="subtitle-intro" class="text-[5.5rem] text-white text-center font-extralight italic leading-[8rem]"></p>
+                    </div>
+                    <div id="icons" class="mx-auto flex flex-row justify-center items-center gap-5 pt-20 pb-7">
+                        <div id="icon-intro-1" class="flex-1 flex justify-center"></div>
+                        <div id="icon-intro-2" class="flex-1 flex justify-center"></div>
+                        <div id="icon-intro-3" class="flex-1 flex justify-center"></div>
+                    </div>
+                    <div id="jogar" class="w-full py-24 cursor-pointer">
+                        <img class="pointer-events-none mx-auto" src="img/jogar.png" alt="Jogar">
+                    </div>
+                </div>
             </div>
-            
         </div>
-    </div>
-    
-
-
-    <script src="src/js/script.js"></script>
+        <div id="game-area" class="transition-all duration-300 isolate"></div>
+        <div id="game-over" class="transition duration-300"></div>
+        <div id="finnish" class="transition duration-300"></div>
+    </section>
+    <script src="js/steps.js"></script>
+    <script src="js/icatu.js"></script>
 </body>
 </html>
